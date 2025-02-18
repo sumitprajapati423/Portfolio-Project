@@ -264,8 +264,6 @@ span{
     gap: 4rem;
 }
 .about-img img{
-    width: 80%;
-    /* margin-left: 20px; */
     border-bottom: 2px solid black;
     border-radius: 50%;
     
@@ -278,22 +276,13 @@ span{
     text-align: center;
     line-height:1.2 ;
 }
+.about-contact p{
+    font-size: 15px;
+}
 .about-contact h3{
     font-size: 2rem;
 }
-.about-contact pre{
-    font-size: 1.rem;
-    font-weight: 600;
-    font-style:normal;
-    /* margin: 2rem 0 3rem; */
-}
-.about-contact .btn{
-    width: 150px;
-    height: 40px;
-    margin-left: 100px;
-    text-align: center;
 
-}
 .services {
     min-height: auto;
     padding-bottom: 7rem;
@@ -556,6 +545,7 @@ span{
     }
     .home .home-contact{
         max-width: 50rem;
+        margin-top: 50px;
     }
     .home.profession-container .profession-box{
         right: -45rem;
@@ -563,9 +553,7 @@ span{
     .home.profession-container .overlay{
         right: -39.5rem;
     }
-    /* .home-image img{
-        display: none;
-    } */
+ 
 
 .services,
 .porthfolio{
@@ -578,7 +566,7 @@ footer{
     padding: 2rem 3%;
 }
 }
-@media (max-width:768px){
+/* @media (max-width:768px){
     #menu-icon{
         display: block;
     }
@@ -589,7 +577,7 @@ footer{
         font-size: 2.6rem;
         margin-bottom: .1rem;
     }
-}
+} */
 
 
 
@@ -617,10 +605,18 @@ footer{
         color: var(--text-color);
      }
 
-     /* .navbar a.active{
-        color: var(--main-color);
-     } */
+     #menu-icon{
+        display: block;
+    }
 
+    #darkmoon-icon{
+        position: absolute;
+        right: 7rem;
+        font-size: 2.6rem;
+        margin-bottom: .1rem;
+    }
+
+   
      .navbar a::before{
         display: none;
      }
@@ -644,11 +640,7 @@ footer{
         margin: 2.5rem .75rem 3rem ;
      }
 
-     /* .home .profession-container {
-        left: 0;
-        width: 100%;
-        height: 100%;
-     } */
+   
 
      .home .profession-container .profession-box {
         position: fixed;
@@ -658,37 +650,7 @@ footer{
         width: 100%;
      }
 
-     /* .home .profession-box .profession {
-        margin-top: -70px;
-        background-color: red;
     
-     } */
-
-     /* .home .profession-box .profession {
-        padding:  0 13rem;
-        left: auto;
-        transform-origin: 0;
-     } */
-
-     /* .home .profession-box .profession:nth-child(1){
-        transform: rotate(-90deg) translate(-120px, -120px);
-     }
-
-     .home .profession-box .profession:nth-child(1) i {
-        margin-right: 0;
-     }
-
-     .home .profession-box .profession:nth-child(2){
-        transform: rotate(0deg) translate(0, -335px);
-     }
-
-     .home .profession-box .profession:nth-child(3){
-        transform: rotate(90deg) translate(-115, -450px);
-     }
-
-     .home .profession-box .profession:nth-child(4){
-        transform: rotate(180deg) translate(-220px, -335px);
-     } */
 
      .home .profession-box .circle {
         position: fixed;
@@ -697,7 +659,7 @@ footer{
         z-index: -2;
      }
      .home .profession-container .overlay {
-            position: fixed;
+            position: absolute;
             top: 70rem;
             left: 50%;
             right: 0;
@@ -705,7 +667,6 @@ footer{
             border-width: 23.9rem;
      }
 
-     /* --------------about Res... */
      .about{
         flex-direction: column-reverse;
         text-align: center;
@@ -720,12 +681,10 @@ footer{
      .about-contact pre{
          overflow: scroll;
      }
-     /* .about-img img{
-        width: 70vw;
-        margin-top: -2rem;
-     } */
+   
      .about-img img{
         width: 50vw;
+        align-items: center;
     }
      
      .services h2,
@@ -751,6 +710,10 @@ footer{
         .footer p {
             text-align: center;
             margin-top: 2rem;
+        }
+
+        .about{
+            display: none;
         }
 
         .about-img img{
